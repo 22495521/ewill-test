@@ -157,8 +157,8 @@
         methods: { 
             animate(){
                 requestAnimationFrame(() => {
-                    this.wave1position+=0.1;
-                    if (this.wave1position >= 100) {
+                    this.wave1position+=0.5;
+                    if (this.wave1position == 100) {
                         this.wave1position = 0 
                     }
                     this.animate() 
@@ -166,8 +166,8 @@
             },
             animate2(){
                 requestAnimationFrame(() => {
-                    this.wave2position+= 0.1;
-                    if (this.wave2position >= 0) {
+                    this.wave2position+= 0.5;
+                    if (this.wave2position == 0) {
                         this.wave2position = -100 
                     }
                     this.animate2()
