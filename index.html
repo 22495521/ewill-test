@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/all.css">
     <title>Document</title>
@@ -18,9 +16,9 @@
     <div id="app">
         <div class="container">
             <div class="banner">
-                <img src="images/Vector1.png" class="wave1" alt="">
-                <img src="images/Vector2.png" class="wave2" alt="">
-                <img src="./images/Vector3.png" class="wave3" alt="">
+                <img src="img/Vector1.png" class="wave1" alt="">
+                <img src="img/Vector2.png" class="wave2" alt="">
+                <img src="img/Vector3.png" class="wave3" alt="">
                 <div class="banner-item">
                     <h1>
                         There is no one <br>
@@ -30,23 +28,23 @@
                 </div>
                 <div class="banner-text">
                     <Transition  name="bubble" mode="out-in" >
-                        <img src="/images/泡泡大.svg" v-if="bubble" class="bubble" alt="">
+                        <img src="/img/泡泡大.svg" v-if="bubble" class="bubble" alt="">
                     </Transition>
-                    <img src="/images/sup.png" class="boat" alt="">
+                    <img src="/img/sup.png" class="boat" alt="">
                     <Transition  name="boat-stransition" mode="in-out" >
-                        <img src="/images/船槳.png" class="boat-tool"  v-if="tool" alt="">
+                        <img src="/img/船槳.png" class="boat-tool"  v-if="tool" alt="">
                     </Transition>
-                    <img src="/images/sup煙火.png" class="sup" alt="">
+                    <img src="/img/sup煙火.png" class="sup" alt="">
                     <Transition  name="supboon" mode="in-out" >
-                        <img src="/images/煙火.svg" class="Vector"  v-if="Vector" alt="">
+                        <img src="/img/煙火.svg" class="Vector"  v-if="Vector" alt="">
                     </Transition>
                     <div class="m-bottom">
                         <div class="banner-title">
-                            <img src="/images/cactus.png" alt="">
+                            <img src="/img/cactus.png" alt="">
                             <h2>
                                 paragraphs
                             </h2>
-                            <img src="/images/cactus.png" alt="">
+                            <img src="/img/cactus.png" alt="">
                         </div>
                         <ul class="banner-list">
                             <li>
@@ -56,11 +54,11 @@
                     </div>
                     <div>
                         <div class="banner-title"> 
-                            <img src="/images/cactus.png" alt="">
+                            <img src="/img/cactus.png" alt="">
                             <h2>
                                 paragraphs
                             </h2>
-                            <img src="/images/cactus.png" alt="">
+                            <img src="/img/cactus.png" alt="">
 
                         </div>
                         <ul class="banner-list">
@@ -74,8 +72,8 @@
             </div>
 
             <div class="wave-repet">
-                <img :style="{ transform: `translateX(${wave1position}%)` }" src="./images/海浪.png" class="image1" alt="">
-                <img :style="{ transform: `translateX(${wave2position}%)` }" src="./images/海浪.png" class="image2" />
+                <img :style="{ transform: `translateX(${wave1position}%)` }" src="./img/海浪.png" class="image1" alt="">
+                <img :style="{ transform: `translateX(${wave2position}%)` }" src="./img/海浪.png" class="image2" />
             </div>
 
             <section class="content">
@@ -109,14 +107,14 @@
 
             <section class="bage-content">
                 <ul>
-                    <li><span class="bage">A</span><p class="bage-btn">ONE</p><img src="/images/certificateA.png" alt=""><div class="bage-content-text1"><p>dehumidifier</p></div></li>
-                    <li><span class="bage">B</span><p class="bage-btn">ONE</p><img src="/images/certificateA.png" alt=""><div class="bage-content-text1"><p>range hood</p></div></li>
-                    <li><span class="bage">C</span><p class="bage-btn">ONE</p><img src="/images/certificateA.png" alt=""><div class="bage-content-text1"><p>vacuum cleaner</p></div></li>
-                    <li><span class="bage">D</span><p class="bage-btn">ONE</p><img src="/images/certificateD.png" alt=""><div class="bage-content-text"><p>toaster</p></div></li>
-                    <li><span class="bage">E</span><p class="bage-btn">ONE</p><img src="/images/certificateD.png" alt=""><div class="bage-content-text"><p>scale</p></div></li>
-                    <li><span class="bage">F</span><p class="bage-btn">ONE</p><img src="/images/certificateD.png" alt=""><div class="bage-content-text"><p>straightening iron</p></div></li>
-                    <li><span class="bage">G</span><p class="bage-btn">FIVE</p><img src="/images/certificateD.png" alt=""><div class="bage-content-text"><p>vacuum cleaner</p></div></li>
-                    <li><span class="bage">H</span><p class="bage-btn">TEN</p><img src="/images/certificateD.png" alt=""><div class="bage-content-text"><p>rice cooker</p></div></li>
+                    <li><span class="bage">A</span><p class="bage-btn">ONE</p><img src="/img/certificateA.png" alt=""><div class="bage-content-text1"><p>dehumidifier</p></div></li>
+                    <li><span class="bage">B</span><p class="bage-btn">ONE</p><img src="/img/certificateA.png" alt=""><div class="bage-content-text1"><p>range hood</p></div></li>
+                    <li><span class="bage">C</span><p class="bage-btn">ONE</p><img src="/img/certificateA.png" alt=""><div class="bage-content-text1"><p>vacuum cleaner</p></div></li>
+                    <li><span class="bage">D</span><p class="bage-btn">ONE</p><img src="/img/certificateD.png" alt=""><div class="bage-content-text"><p>toaster</p></div></li>
+                    <li><span class="bage">E</span><p class="bage-btn">ONE</p><img src="/img/certificateD.png" alt=""><div class="bage-content-text"><p>scale</p></div></li>
+                    <li><span class="bage">F</span><p class="bage-btn">ONE</p><img src="/img/certificateD.png" alt=""><div class="bage-content-text"><p>straightening iron</p></div></li>
+                    <li><span class="bage">G</span><p class="bage-btn">FIVE</p><img src="/img/certificateD.png" alt=""><div class="bage-content-text"><p>vacuum cleaner</p></div></li>
+                    <li><span class="bage">H</span><p class="bage-btn">TEN</p><img src="/img/certificateD.png" alt=""><div class="bage-content-text"><p>rice cooker</p></div></li>
                 </ul>
             </section>
 
@@ -126,7 +124,7 @@
                     who seeks after it and <br>
                     wants to have it
                 </p>
-                <img style="margin-top: 20px;" src="/images/lighthouse.png" alt="">
+                <img style="margin-top: 20px;" src="/img/lighthouse.png" alt="">
             </section>
 
             <section style="background-color: #E5E5E5;">
@@ -135,7 +133,7 @@
                         Neque porro quisquam <br>
                         est qui dolorem!
                     </p>
-                    <img src="/images/market.png" alt="">
+                    <img src="/img/market.png" alt="">
                 </div>
             </section>
         </div>
