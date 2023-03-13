@@ -376,7 +376,7 @@ body{
   width: 100%;
   padding-left: 25px;
   appearance: none;
-  background-image: url('/img/箭頭.png');
+  background-image: url('../img/箭頭.png');
   background-repeat: no-repeat;
   background-position: right 25px top 50%, 0 0;
 }
@@ -419,7 +419,6 @@ button[type="submit"] {
 
 
 .bage-content{
-  background: #e2d9d3 url('/img/抽獎沙子.png');
   padding: 41px 0;
 }
 
