@@ -16,9 +16,9 @@
     <div id="app">
         <div class="container">
             <div class="banner">
-                <img src="img/Vector1.png" class="wave1" alt="">
-                <img src="img/Vector2.png" class="wave2" alt="">
-                <img src="img/Vector3.png" class="wave3" alt="">
+                <img src="./img/Vector1.png" class="wave1" alt="">
+                <img src="./img/Vector2.png" class="wave2" alt="">
+                <img src="./img/Vector3.png" class="wave3" alt="">
                 <div class="banner-item">
                     <h1>
                         There is no one <br>
@@ -158,7 +158,7 @@
             animate(){
                 requestAnimationFrame(() => {
                     this.wave1position+=0.1;
-                    if (this.wave1position > 100) {
+                    if (this.wave1position >= 100) {
                         this.wave1position = 0 
                     }
                     this.animate() 
@@ -167,7 +167,7 @@
             animate2(){
                 requestAnimationFrame(() => {
                     this.wave2position+= 0.1;
-                    if (this.wave2position > 0) {
+                    if (this.wave2position >= 0) {
                         this.wave2position = -100 
                     }
                     this.animate2()
